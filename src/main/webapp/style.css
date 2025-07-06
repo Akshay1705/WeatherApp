@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f4f4f4;
+}
+
+.mainContainer {
+  width: 26rem;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  border-radius: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.searchInput {
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.searchInput input {
+  flex: 1;
+  height: 2.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: border 0.3s;
+}
+
+.searchInput input:focus {
+  outline: none;
+  border: 2px solid #6c63ff;
+}
+
+.searchInput button {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #6c63ff;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.searchInput button:hover {
+  background-color: #524bd7;
+}
+
+.weatherIcon {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.weatherIcon img {
+  width: 8rem;
+  filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.5));
+}
+
+.weatherDetails .temp {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #f4f4f4;
+  margin-top: 0.5rem;
+}
+
+.cityDetails {
+  font-size: 2rem;
+  text-align: center;
+  margin: 1rem 0 0.3rem 0;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.cityDetails .date {
+  font-size: 1.2rem;
+  color: #dddddd;
+  text-align: center;
+}
+
+.windDetails {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0 1.5rem 0;
+}
+
+.windDetails .humidityBox,
+.windDetails .windSpeed {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f4f4f4;
+  font-size: 1rem;
+}
+
+.windDetails .humidityBox img,
+.windDetails .windSpeed img {
+  max-height: 2.5rem;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.windDetails h2 {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+.image-logo {
+  height: auto;
+  width: auto;
+  filter: drop-shadow(20px 10px 10px black);
+}
+
+/* Error Message Styling */
+.error {
+  text-align: center;
+  margin-top: 1rem;
+  color: #ff6b6b;
+  font-weight: bold;
+}

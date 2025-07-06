@@ -1,0 +1,29 @@
+# Java build files
+*.class
+*.jar
+*.war
+
+# Eclipse specific files
+.project
+.classpath
+.settings/
+
+# Build directories
+/bin/
+/build/
+/target/
+
+# IntelliJ IDEA
+*.iml
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Sensitive config
+apikeys.txt
+.env
