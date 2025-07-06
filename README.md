@@ -1,29 +1,29 @@
-# 🌤 WeatherApp (JSP + Servlet)
+# 🌦️ Weather Web App
 
-A responsive weather web application built using Java Servlets, JSP, and OpenWeatherMap API.
+A simple weather forecasting web application that allows users to fetch real-time weather information for any city using the OpenWeatherMap API.
 
-## 🚀 Features
-- Real-time weather data
-- City search with live API integration
-- Responsive UI with CSS and icons
-- Error handling for invalid city inputs
-
-## 🛠 Technologies
-- Java (Servlets, JSP)
-- HTML, CSS
-- JSTL
+## 🔧 Technologies Used
+- Java
+- Servlet & JSP
+- HTML, CSS, JavaScript
+- JSTL (JSP Standard Tag Library)
 - OpenWeatherMap API
 
-## 📦 How to Run
-1. Clone the repo
-2. Import in Eclipse/IDE
-3. Run on Tomcat Server
-4. Hit `http://localhost:8080/MywatherApp`
+## 📋 Features
+- Real-time weather updates by city
+- Displays temperature, humidity, wind speed, and weather conditions
+- Clean and responsive UI
+- Error handling for invalid city names
 
-## 📸 Screenshots
-*(Add images if you want)*
+## 🚀 How to Run
+1. Clone the repository
+2. Import it into Eclipse/IntelliJ
+3. Add required dependencies (JSTL, Gson)
+4. Deploy on Apache Tomcat
+5. Visit `http://localhost:8080/WeatherApp/`
 
----
+## 💡 Notes
+- Make sure to replace the API key in the servlet with your own OpenWeatherMap API key.
+- Ensure JSTL JARs are placed in the `WEB-INF/lib` directory.
 
-Feel free to fork, modify, or contribute!
-
+## 📂 Project Structure
