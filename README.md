@@ -17,9 +17,12 @@ A simple weather forecasting web application that allows users to fetch real-tim
 
 ## 🚀 How to Run
 1. Clone the repository
-2. Import it into Eclipse/IntelliJ
-3. Add required dependencies (JSTL, Gson)
-4. Deploy on Apache Tomcat
+2. Import the project into Eclipse
+3. Ensure the following JARs are placed inside `WEB-INF/lib`:
+   - `jakarta.servlet.jsp.jstl-api-3.0.0.jar`
+   - `jakarta.servlet.jsp.jstl-impl-3.0.0.jar`
+   - `gson-2.10.1.jar`
+4. Deploy the project on Apache Tomcat 10+
 5. Visit `http://localhost:8080/WeatherApp/`
 
 ## 💡 Notes
